@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Continue</title>
+</head>
+<body>
+    <div class="cp1" id="id1">this is a div
+        <p class="cp1" id="id2">this is a para</p>
+    </div>
+    <span class="cp1" id="id3">this is span</span>
+
+    <script>
+        // matches()
+        let id1=document.getElementById("id1");
+        console.log(id1.matches(".cp1"));
+
+        // closest()
+        let id2=document.getElementById("id2");
+        console.log(id2.closest("#id1"))
+
+
+        // contains()
+        let id3=document.getElementById("id3");
+        console.log(id1.contains(id1))
+    </script>
+</body>
+</html>
